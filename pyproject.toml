@@ -15,3 +15,12 @@ dependencies = [
     "sqlalchemy==2.0.46",
     "xmltodict==1.0.4",
 ]
+
+[project.optional-dependencies]
+# Lightweight variant without Scrapy — works in Fabric Spark notebooks
+lite = [
+    "requests>=2.28",
+    "beautifulsoup4>=4.12",
+    "xmltodict>=1.0",
+    "pyproj>=3.6",
+]
